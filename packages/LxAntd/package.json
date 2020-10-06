@@ -1,0 +1,34 @@
+{
+  "name": "@lavax-ui/antd",
+  "version": "0.0.0",
+  "description": "AntDesign components from lavax",
+  "main": "dist/index.js",
+  "source": "src/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "concurrently \"tsc -w -p tsconfig.json\"",
+    "clean": "rimraf dist"
+  },
+  "peerDependencies": {
+    "react": ">= 16.13.1 < 17",
+    "react-dom": ">= 16.13.1 < 17"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.2.2",
+    "@lavax-ui/components": "^0.0.0",
+    "@lavax-ui/helpers": "^1.0.0",
+    "@lavax-ui/hooks": "^1.0.0",
+    "antd": "^4.6.4",
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.15",
+    "next": "^9.5.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.160",
+    "@types/react": "^16.9.49",
+    "@types/styled-components": "^5.1.2"
+  }
+}

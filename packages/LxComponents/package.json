@@ -1,0 +1,31 @@
+{
+  "name": "@lavax-ui/components",
+  "version": "0.0.0",
+  "description": "Utility components from lavax",
+  "main": "dist/index.js",
+  "source": "src/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "concurrently \"tsc -w -p tsconfig.json\"",
+    "clean": "rimraf dist"
+  },
+  "peerDependencies": {
+    "react": ">= 16.13.1 < 17",
+    "react-dom": ">= 16.13.1 < 17"
+  },
+  "dependencies": {
+    "@lavax-ui/helpers": "^1.0.0",
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.15",
+    "next": "^9.5.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.2.0",
+    "styled-jsx": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.160",
+    "@types/react": "^16.9.49",
+    "@types/styled-components": "^5.1.2"
+  }
+}

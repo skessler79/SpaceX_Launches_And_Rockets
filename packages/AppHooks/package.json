@@ -1,0 +1,26 @@
+{
+  "name": "@app-ui/hooks",
+  "version": "0.0.0",
+  "description": "App UI hooks components that shared across packages & projects",
+  "main": "dist/index.js",
+  "source": "src/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "concurrently \"tsc -w -p tsconfig.json\"",
+    "clean": "rimraf dist"
+  },
+  "peerDependencies": {
+    "react": ">= 16.13.1 < 17",
+    "react-dom": ">= 16.13.1 < 17"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.1.4",
+    "lodash": "^4.17.15",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.160",
+    "@types/react": "^16.9.47"
+  }
+}

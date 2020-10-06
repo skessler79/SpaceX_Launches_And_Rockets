@@ -1,0 +1,32 @@
+{
+  "name": "@app-helper/graphql",
+  "version": "0.0.0",
+  "description": "App graphql that shared across packages & projects",
+  "main": "dist/index.js",
+  "source": "src/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "concurrently \"tsc -w -p tsconfig.json\"",
+    "clean": "rimraf dist",
+    "generate": "graphql-codegen --config codegen.yml"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.1.5",
+    "graphql": "^15.3.0",
+    "graphql-tag": "^2.11.0",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@graphql-codegen/add": "^2.0.1",
+    "@graphql-codegen/cli": "1.17.8",
+    "@graphql-codegen/near-operation-file-preset": "^1.17.11",
+    "@graphql-codegen/typescript": "1.17.9",
+    "@graphql-codegen/typescript-document-nodes": "^1.17.8",
+    "@graphql-codegen/typescript-operations": "1.17.8",
+    "@graphql-codegen/typescript-react-apollo": "2.0.6",
+    "@types/graphql": "^14.5.0",
+    "@types/lodash": "^4.14.160",
+    "@types/node": "^14.6.4",
+    "@types/webpack-env": "^1.15.2"
+  }
+}

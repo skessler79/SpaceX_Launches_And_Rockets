@@ -1,0 +1,21 @@
+/**
+  https://www.typescriptlang.org/docs/handbook/compiler-options.html
+*/
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "target": "es6",
+    "sourceMap": true,
+    "lib": ["es6", "dom"],
+    "types": ["react"]
+  },
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

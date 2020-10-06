@@ -1,0 +1,30 @@
+{
+  "name": "@lavax-ui/helpers",
+  "version": "1.0.0",
+  "description": "UI helpers from Lava X",
+  "main": "dist/index.js",
+  "source": "src/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "concurrently \"tsc -w -p tsconfig.json\"",
+    "clean": "rimraf dist"
+  },
+  "peerDependencies": {
+    "react": ">= 16.13.1 < 17",
+    "react-dom": ">= 16.13.1 < 17"
+  },
+  "dependencies": {
+    "@lavax-helper/next-js": "^1.0.0",
+    "dayjs": "^1.8.34",
+    "lodash": "^4.17.20",
+    "next": "^9.5.2",
+    "numeral": "^2.0.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-ga": "^3.1.2"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.161",
+    "@types/react": "^16.9.48"
+  }
+}
